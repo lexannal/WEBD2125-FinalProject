@@ -8,7 +8,113 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-   
+    <!-- Header Navigation -->
+ <section class="header navbar navbar-expand-lg sticky-top py-3">
+    <div class="container">
+        <a class="header__logo navbar-brand display-font" href="index.html">Coffee House</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <nav class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="header__nav-link nav-link px-3" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="header__nav-link nav-link px-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="header__nav-link nav-link px-3" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+ <!-- Hero -->
+<section class="hero d-flex align-items-center">
+    <div class="container text-center text-white py-5">
+        <h1 class="display-4 display-font mb-3">Artisan Coffee & Homemade Pastries</h1>
+        <p class="lead mb-4">Serving the Twin Cities since 2003 with locally sourced ingredients</p>
+    </div>
+</section>
+
+ <!-- Featured -->
+<section class="py-5 my-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-font mb-3">Our Specialties</h2>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card--featured h-100 border-0 shadow">
+                    <img src="images/coffee-iced-1.jpg" class="card__image card-img-top" alt="Signature Drink">
+                    <div class="card-body text-center">
+                        <h3 class="card-title display-font">Vanilla Ice</h3>
+                        <p class="card-text">Our signature espresso blend with house-made vanilla syrup</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card card--featured h-100 border-0 shadow">
+                    <img src="images/pastry-1.jpg" class="card__image card-img-top" alt="Popular Breakfast">
+                    <div class="card-body text-center">
+                        <h3 class="card-title display-font">Almond Croissant</h3>
+                        <p class="card-text">Flaky and buttery freshly baked croissants with a nutty sweetness</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card card--featured h-100 border-0 shadow">
+                    <img src="images/coffee-hot-1.jpg" class="card__image card-img-top" alt="Seasonal Special">
+                    <div class="card-body text-center">
+                        <h3 class="card-title display-font">Nice Spice</h3>
+                        <p class="card-text">A twist on the classic pumpkin spice latte with a blend of fall flavors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="footer pt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h3 class="footer__column-title mb-4">Hours</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">Monday-Friday: 7am-7pm</li>
+                    <li class="mb-2">Saturday: 8am-8pm</li>
+                    <li>Sunday: 8am-6pm</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4">
+                <h3 class="footer__column-title mb-4">Location</h3>
+                <address>
+                    123 Coffee Street<br>
+                    Minneapolis, MN 55404<br><br>
+                    <a href="tel:+15551234567" class="footer__link">(555) 123-4567</a>
+                </address>
+            </div>
+            
+            <div class="col-md-4">
+                <h3 class="footer__column-title mb-4">Connect</h3>
+                <div class="d-flex gap-3 mb-4">
+                    <a href="#" class="footer__social-link">IG</a>
+                    <a href="#" class="footer__social-link">FB</a>
+                    <a href="#" class="footer__social-link">TW</a>
+                </div>
+                </form>
+            </div>
+        </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>

@@ -1,34 +1,129 @@
-
 //  Colors
-$color-secondary: #C4A484;
-$color-primary: #6F4E37;
-$color-accent: #A67C52;
-$color-light: #F9F5F0;
-$color-dark: #2A2118;
- 
- 
+$color-secondary: #c4a484;
+$color-primary: #6f4e37;
+$color-accent: #a67c52;
+$color-light: #f9f5f0;
+$color-dark: #2a2118;
+
 // Playfair Display - Heading Font
-  @font-face {
-    font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
-    font-weight: 400 900;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("ttf");
+  font-weight: 400 900;
+  font-style: normal;
+}
 
 // Inter - Body Font
-  @font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('ttf');
-    font-weight: 100 900;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
 
 // Fonts
-  $font-display: 'Playfair Display', serif;
-  $font-body: 'Montserrat', sans-serif;
+$font-display: "Playfair Display", serif;
+$font-body: "Montserrat", sans-serif;
 
 // Effects
-  $shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
-  $shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  $transition: all 0.3s ease;
+$shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease;
 
+// Styles
+body {
+  font-family: $font-body;
+  color: $color-dark;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: $font-display;
+  font-weight: 700;
+}
+
+// Header Nav
+.header {
+  background-color: $color-light;
+  box-shadow: $shadow-sm;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  .header__logo {
+    font-family: $font-display;
+    font-size: 1.8rem;
+    color: $color-primary;
+    text-decoration: none;
+  }
+  .header-link,
+  .nav-link {
+    font-weight: 600;
+    color: $color-dark;
+    transition: $transition;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+// Hero
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/cafe-1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+// Featured
+.card {
+  .card-body {
+    background-color: $color-light;
+  }
+}
+
+// Footer
+.footer {
+  background-color: $color-dark;
+  color: $color-light;
+  .footer__column-title {
+    color: $color-secondary;
+  }
+}
+
+
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: $color-secondary;
+}
+
+.footer__social-link {
+  width: 40px;
+  height: 40px;
+  background-color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.footer__social-link:hover {
+  background-color: $color-accent;
+}

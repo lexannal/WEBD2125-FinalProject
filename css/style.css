@@ -9,4 +9,91 @@
   src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("ttf");
   font-weight: 100 900;
   font-style: normal;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2a2118;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.header {
+  background-color: #f9f5f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.header .header__logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #6f4e37;
+  text-decoration: none;
+}
+.header .header-link,
+.header .nav-link {
+  font-weight: 600;
+  color: #2a2118;
+  transition: all 0.3s ease;
+}
+.header .header-link:hover,
+.header .nav-link:hover {
+  color: #6f4e37;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/cafe-1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card .card-body {
+  background-color: #f9f5f0;
+}
+
+.footer {
+  background-color: #2a2118;
+  color: #f9f5f0;
+}
+.footer .footer__column-title {
+  color: #c4a484;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #c4a484;
+}
+
+.footer__social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #6f4e37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.footer__social-link:hover {
+  background-color: #a67c52;
 }/*# sourceMappingURL=style.css.map */
