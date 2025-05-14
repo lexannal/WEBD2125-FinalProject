@@ -45,6 +45,8 @@ h3,
   font-weight: 700;
 }
 
+//-----NAVIGATION/FOOTER------
+
 // Header Nav
 .header {
   background-color: $color-light;
@@ -71,27 +73,6 @@ h3,
   }
 }
 
-// Hero
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/cafe-1.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
-
-// Featured
-.card {
-  .card-body {
-    background-color: $color-light;
-  }
-}
-
 // Footer
 .footer {
   background-color: $color-dark;
@@ -100,8 +81,6 @@ h3,
     color: $color-secondary;
   }
 }
-
-
 
 .footer__link {
   color: white;
@@ -127,3 +106,104 @@ h3,
 .footer__social-link:hover {
   background-color: $color-accent;
 }
+
+//-----HOME PAGE------
+
+// Hero
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/cafe-1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+// Featured
+.card {
+  .card-body {
+    background-color: $color-light;
+  }
+}
+
+//-----MENU PAGE------
+
+//-----ABOUT PAGE------
+
+//About Story
+.about-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: $color-dark;
+  display: flex;
+  align-items: center;
+  color: $color-light;
+  .about-hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .about-hero__title {
+      font-family: $font-display;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+//Mission
+.mission {
+  .mission__image-container {
+    margin-bottom: 2rem;
+    img {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .mission__title {
+    font-family: $font-display;
+    color: $color-primary;
+    margin-bottom: 1.5rem;
+  }
+  .mission__text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  .mission__list {
+    list-style: none;
+    padding: 0;
+  }
+  .mission__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
+//Values
+.values {
+  background-color: $color-primary;
+  .section-header__title {
+    color: $color-light;
+  }
+  .value-card {
+    background: $color-light;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  .value-card__title {
+    font-family: $font-display;
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+  .value-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+//-----CONTACT PAGE------

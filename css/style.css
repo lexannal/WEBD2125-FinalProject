@@ -49,22 +49,6 @@ h3,
   color: #6f4e37;
 }
 
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/cafe-1.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
-
-.card .card-body {
-  background-color: #f9f5f0;
-}
-
 .footer {
   background-color: #2a2118;
   color: #f9f5f0;
@@ -96,4 +80,89 @@ h3,
 
 .footer__social-link:hover {
   background-color: #a67c52;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/cafe-1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card .card-body {
+  background-color: #f9f5f0;
+}
+
+.about-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: #2a2118;
+  display: flex;
+  align-items: center;
+  color: #f9f5f0;
+}
+.about-hero .about-hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.about-hero .about-hero__content .about-hero__title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission .mission__image-container {
+  margin-bottom: 2rem;
+}
+.mission .mission__image-container img {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.mission .mission__title {
+  font-family: "Playfair Display", serif;
+  color: #6f4e37;
+  margin-bottom: 1.5rem;
+}
+.mission .mission__text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.mission .mission__list {
+  list-style: none;
+  padding: 0;
+}
+.mission .mission__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.values {
+  background-color: #6f4e37;
+}
+.values .section-header__title {
+  color: #f9f5f0;
+}
+.values .value-card {
+  background: #f9f5f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+.values .value-card__title {
+  font-family: "Playfair Display", serif;
+  color: #6f4e37;
+  margin-bottom: 1rem;
+}
+.values .value-card:hover {
+  transform: translateY(-5px);
 }/*# sourceMappingURL=style.css.map */
