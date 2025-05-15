@@ -132,6 +132,99 @@ h3,
 
 //-----MENU PAGE------
 
+// Menu Navigation
+.menu-nav {
+  background: $color-accent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1010;
+  padding: 1rem 0;
+  .menu-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .menu-nav__item {
+    display: inline-block;
+  }
+  .menu-nav__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: $color-light;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .menu-nav__link:hover,
+  .menu-nav__link:active {
+    color: white;
+    background: $color-primary;
+  }
+}
+// Menu Section
+.menu-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.menu-category__title {
+  font-family: $font-display;
+        color: $color-primary;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid $color-secondary;
+        display: flex;
+        align-items: center;
+}
+// Menu Item
+.menu-item {
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+  .menu-item__content {
+    padding: 1.5rem;
+  }
+  .menu-item__header {
+    display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.5rem;
+  }
+  .menu-item__name {
+    font-family: $font-display;
+        font-size: 1.25rem;
+        color: $color-primary;
+        margin-bottom: 0;
+  }
+  .menu-item__price {
+    font-weight: 600;
+    color: $color-accent;
+  }
+  .menu-item__description {
+    color: lighten($color-dark, 20%);
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+  }
+  .menu-item__options, .menu-item__flavors {
+    font-size: 0.85rem;
+        color: lighten($color-dark, 30%);
+        margin-top: 0.5rem;
+  }
+  .menu-item__badges {
+    margin-top: 0.75rem;
+    .badge {
+      margin-right: 0.5rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            padding: 0.35rem 0.75rem;
+            background-color: $color-secondary;
+    }
+  }
+}
+
 //-----ABOUT PAGE------
 
 //About Story
