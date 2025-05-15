@@ -174,7 +174,8 @@ h3,
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
 }
-.menu-item .menu-item__options, .menu-item .menu-item__flavors {
+.menu-item .menu-item__options,
+.menu-item .menu-item__flavors {
   font-size: 0.85rem;
   color: #8b6e50;
   margin-top: 0.5rem;
@@ -257,4 +258,103 @@ h3,
 }
 .values .value-card:hover {
   transform: translateY(-5px);
+}
+
+.contact-hero {
+  position: relative;
+  height: 40vh;
+  min-height: 300px;
+  background: url("../images/coffee-iced-2.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.contact-hero .contact-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.contact-hero .contact-hero__content {
+  position: relative;
+  z-index: 1;
+  color: #f9f5f0;
+}
+.contact-hero .contact-hero__title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.contact-hero .contact-hero__subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.contact-section {
+  background-color: #f9f5f0;
+}
+
+.contact-info .contact-info__title {
+  font-family: "Playfair Display", serif;
+  color: #6f4e37;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.contact-info .contact-info__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #a67c52;
+}
+.contact-info .contact-info__item {
+  display: flex;
+  gap: 1.5rem;
+}
+.contact-info .contact-info__heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6f4e37;
+  margin-bottom: 0.5rem;
+}
+.contact-info .contact-info__text {
+  color: #2a2118;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  border: none;
+  border-radius: 8px;
+}
+.contact-form .card-body {
+  background-color: #c4a484;
+}
+.contact-form .contact-form__title {
+  font-family: "Playfair Display", serif;
+  color: #2a2118;
+}
+.contact-form .contact-form__subtitle {
+  color: #6f4e37;
+}
+.contact-form .form-control {
+  border: 1px solid #cdbaa7;
+  padding: 1rem;
+}
+.contact-form .form-control:focus {
+  border-color: #a67c52;
+  box-shadow: 0 0 0 0.25rem rgba(166, 124, 82, 0.25);
+}
+.contact-form .form-floating > label {
+  color: #8b6e50;
+  padding: 1rem;
+}
+.contact-form .btn {
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #2a2118;
+  color: #c4a484;
 }/*# sourceMappingURL=style.css.map */
